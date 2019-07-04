@@ -13,7 +13,7 @@ import (
 	"github.com/qor/admin"
 	"github.com/qor/media/oss"
 	"github.com/qor/worker"
-	"github.com/zealllot/i18n"
+	"github.com/theplant/i18n"
 )
 
 type ExportTranslationArgument struct {
@@ -33,7 +33,7 @@ func RegisterExchangeJobs(I18n *i18n.I18n, Worker *worker.Worker) {
 	}
 
 	Admin := I18n.Resource.GetAdmin()
-	Admin.RegisterViewPath("github.com/zealllot/i18n/exchange_actions/views")
+	Admin.RegisterViewPath("github.com/theplant/i18n/exchange_actions/views")
 
 	// Export Translations
 	exportTranslationResource := Admin.NewResource(&ExportTranslationArgument{})

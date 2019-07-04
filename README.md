@@ -2,7 +2,7 @@
 
 I18n provides internationalization support for your application, it supports 2 kinds of storages(backends), the database and file system.
 
-[![GoDoc](https://godoc.org/github.com/zealllot/i18n?status.svg)](https://godoc.org/github.com/zealllot/i18n)
+[![GoDoc](https://godoc.org/github.com/theplant/i18n?status.svg)](https://godoc.org/github.com/theplant/i18n)
 
 ## Usage
 
@@ -11,9 +11,9 @@ Initialize I18n with the storage mode. You can use both storages together, the e
 ```go
 import (
   "github.com/jinzhu/gorm"
-  "github.com/zealllot/i18n"
-  "github.com/zealllot/i18n/backends/database"
-  "github.com/zealllot/i18n/backends/yaml"
+  "github.com/theplant/i18n"
+  "github.com/theplant/i18n/backends/database"
+  "github.com/theplant/i18n/backends/yaml"
 )
 
 func main() {

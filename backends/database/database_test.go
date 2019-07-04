@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/jinzhu/gorm"
-	"github.com/zealllot/i18n"
-	"github.com/zealllot/i18n/backends/database"
+	"github.com/theplant/i18n"
+	"github.com/theplant/i18n/backends/database"
 	"github.com/qor/qor/test/utils"
 )
 
