@@ -174,6 +174,10 @@ func (i18n *I18n) T(locale, key string, args ...interface{}) template.HTML {
 				if len(i18n.Backends) > 0 {
 					defaultBackend = i18n.Backends[0]
 				}
+				//Locale, admin_ja, has more priority, anytime anykey should let admin_ja can be matched.
+				if len(fallbackLocales) > 0 {
+					locale = fallbackLocales[0]
+				}
 				translation = Translation{Key: translationKey, Value: value, Locale: locale, Backend: defaultBackend}
 
 				// Save translation
